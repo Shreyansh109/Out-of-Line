@@ -46,4 +46,15 @@ public class PlayerMovement : MonoBehaviour
         }
         rb.linearVelocityX = inputVector.x * 5f; // Adjust speed as needed
     }
+
+    void OnJump(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            rb.linearVelocityY = 7f; // Adjust jump force as needed
+        }else
+        {
+            rb.linearVelocityY = 0f; // Stop jumping when the button is released
+        }
+    }
 }
