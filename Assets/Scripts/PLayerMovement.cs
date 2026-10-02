@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 inputVector;
     private Rigidbody2D rb;
     private Animator animator;
+    bool isJumping = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,12 +50,37 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (value.isPressed)
+        if (value.isPressed && !isJumping)
         {
             rb.linearVelocityY = 7f; // Adjust jump force as needed
+            animator.SetBool("isJumping", true);
         }else
         {
             rb.linearVelocityY = 0f; // Stop jumping when the button is released
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
+        {
+            isJumping = false;
+            animator.SetBool("isJumping", false);
+        }
+    }
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
+        {
+            isJumping = false;
+            animator.SetBool("isJumping", false);
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
+        {
+            isJumping = true;
         }
     }
 }
