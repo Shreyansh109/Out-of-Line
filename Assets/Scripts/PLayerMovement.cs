@@ -52,11 +52,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (value.isPressed && !isJumping)
         {
-            rb.linearVelocityY = 7f; // Adjust jump force as needed
+            rb.linearVelocityY = 6f; // Adjust jump force as needed
             animator.SetBool("isJumping", true);
         }else
         {
-            rb.linearVelocityY = 0f; // Stop jumping when the button is released
+            rb.linearVelocityY = -1f; // Stop jumping when the button is released
         }
     }
 
