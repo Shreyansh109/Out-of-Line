@@ -27,6 +27,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        if (inputVector.x > 0)
+        {
+            gameObject.transform.localScale = new Vector3(1, 1, 1); // Face right
+        }
+        else if (inputVector.x < 0)
+        {
+            gameObject.transform.localScale = new Vector3(-1, 1, 1); // Face left
+        }
         rb.linearVelocityX = inputVector.x * 5f; // Adjust speed as needed
     }
 }
