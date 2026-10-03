@@ -52,11 +52,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (value.isPressed && !isJumping)
         {
-            rb.linearVelocityY = 6f; // Adjust jump force as needed
-            animator.SetBool("isJumping", true);
-        }else
+            rb.linearVelocityY = 11f; // Adjust jump force as needed
+            animator.SetTrigger("isJumping");
+        }
+        else if (!value.isPressed)
         {
-            rb.linearVelocityY = -1f; // Stop jumping when the button is released
+            //rb.linearVelocityY = 1f; // Stop jumping when the button is released
         }
     }
 
@@ -65,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
         {
             isJumping = false;
-            animator.SetBool("isJumping", false);
+            print("Collided with platform");
         }
     }
     void OnCollisionStay2D(Collision2D collision)
@@ -73,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
         {
             isJumping = false;
-            animator.SetBool("isJumping", false);
+            print("Stay with platform");
         }
     }
     void OnCollisionExit2D(Collision2D collision)
@@ -81,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
         {
             isJumping = true;
+            print("Exit with platform");
         }
     }
 }
