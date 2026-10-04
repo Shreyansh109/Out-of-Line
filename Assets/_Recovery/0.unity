@@ -1021,8 +1021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1090498479}
   - component: {fileID: 1090498478}
-  - component: {fileID: 1090498480}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: TowerBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,58 +1102,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1713656960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &1090498480
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090498477}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.88, y: -2.8215415}
-  - {x: -0.8532152, y: 2.7891142}
-  - {x: -0.79563904, y: 2.8700721}
-  - {x: -0.57062626, y: 2.9012308}
-  - {x: -0.2302227, y: 2.914306}
-  - {x: 0.32948303, y: 2.9009023}
-  - {x: 0.49350166, y: 2.889668}
-  - {x: 0.7824917, y: 2.85526}
-  - {x: 0.83200073, y: 2.825948}
-  - {x: 0.8535681, y: 2.780034}
-  - {x: 0.8650569, y: -2.7627537}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1409908879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1208,7 @@ GameObject:
   - component: {fileID: 1412586607}
   - component: {fileID: 1412586606}
   - component: {fileID: 1412586608}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

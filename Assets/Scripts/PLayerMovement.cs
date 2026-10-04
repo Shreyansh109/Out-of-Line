@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 inputVector;
     private Rigidbody2D rb;
     private Animator animator;
+    private BoxCollider2D boxCollider;
     bool isJumping = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,12 +16,14 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+        isJumping = !boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform"));
     }
 
     void OnMove(InputValue value)
@@ -61,28 +64,25 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
-        {
-            isJumping = false;
-            print("Collided with platform");
-        }
-    }
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
-        {
-            isJumping = false;
-            print("Stay with platform");
-        }
-    }
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform")
-        {
-            isJumping = true;
-            print("Exit with platform");
-        }
-    }
+    // void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")))
+    //     {
+    //         isJumping = false;
+    //     }
+    // }//LayerMask.LayerToName(collision.gameObject.layer) == "Platform"
+    // void OnCollisionStay2D(Collision2D collision)
+    // {
+    //     if (boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")))
+    //     {
+    //         isJumping = false;
+    //     }
+    // }
+    // void OnCollisionExit2D(Collision2D collision)
+    // {
+    //     if (boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")))
+    //     {
+    //         isJumping = true;
+    //     }
+    // }
 }
