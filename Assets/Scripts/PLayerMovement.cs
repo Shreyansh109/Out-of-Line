@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Animations;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private BoxCollider2D boxCollider;
-    bool isJumping = false;
+    private AudioSource audioSource;
+    bool isGrounded = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,13 +18,14 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
-        isJumping = !boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform"));
+        isGrounded = boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform"));
     }
 
     void OnMove(InputValue value)
@@ -33,7 +35,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Move()
-    {
+    {   
+        audioSource.volume = Mathf.Abs(inputVector.x)*System.Convert.ToSingle(isGrounded); // Adjust volume based on movement and grounded state
         if (inputVector.x > 0)
         {
             gameObject.transform.localScale = new Vector3(1, 1, 1); // Face right
@@ -53,14 +56,10 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (value.isPressed && !isJumping)
+        if (value.isPressed && isGrounded)
         {
             rb.linearVelocityY = 11f; // Adjust jump force as needed
             animator.SetTrigger("isJumping");
-        }
-        else if (!value.isPressed)
-        {
-            //rb.linearVelocityY = 1f; // Stop jumping when the button is released
         }
     }
 
