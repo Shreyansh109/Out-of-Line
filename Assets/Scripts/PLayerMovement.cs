@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private AudioSource audioSource;
     bool isGrounded = false;
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource audioSourceSFX;
+    [SerializeField] private AudioClip jumpSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -60,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocityY = 11f; // Adjust jump force as needed
             animator.SetTrigger("isJumping");
+            audioSourceSFX.clip = jumpSound; // Play jump sound effect
+            audioSourceSFX.Play();
         }
     }
 
