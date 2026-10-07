@@ -11,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private AudioSource audioSource;
     bool isGrounded = false;
+    bool isJumping = false;
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSourceSFX;
     [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip landSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -65,26 +67,25 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger("isJumping");
             audioSourceSFX.clip = jumpSound; // Play jump sound effect
             audioSourceSFX.Play();
+            isJumping = true;
+        }
+    }
+    //LayerMask.LayerToName(collision.gameObject.layer) == "Platform"
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" && isJumping)
+        {
+            print("Landed on platform");
+            audioSourceSFX.clip = landSound; // Play land sound effect
+            audioSourceSFX.Play();
+            isJumping = false;
         }
     }
 
-    // void OnCollisionEnter2D(Collision2D collision)
+    // private void OnCollisionExit2D(Collision2D collision)
     // {
-    //     if (boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")))
-    //     {
-    //         isJumping = false;
-    //     }
-    // }//LayerMask.LayerToName(collision.gameObject.layer) == "Platform"
-    // void OnCollisionStay2D(Collision2D collision)
-    // {
-    //     if (boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")))
-    //     {
-    //         isJumping = false;
-    //     }
-    // }
-    // void OnCollisionExit2D(Collision2D collision)
-    // {
-    //     if (boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")))
+    //     if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" && isGrounded)
     //     {
     //         isJumping = true;
     //     }
