@@ -166,12 +166,12 @@ MonoBehaviour:
   birdPrefab: {fileID: 8936489156866009039, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
   mainCamera: {fileID: 1419306912}
   spawnDistance: 1
-  minSpawnTime: 1
-  maxSpawnTime: 3
+  minSpawnTime: 4
+  maxSpawnTime: 9
   spawnHeights:
-  - 1
   - 2
   - 3
+  - 3.5
   - 4
 --- !u!1 &279691154
 GameObject:

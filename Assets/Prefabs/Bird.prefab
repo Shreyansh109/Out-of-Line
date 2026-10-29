@@ -127,5 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee996fa7645806940802be5dffc9540d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BirdMovement
-  speed: 5
+  speed: 1
   destroyMargin: 0.1

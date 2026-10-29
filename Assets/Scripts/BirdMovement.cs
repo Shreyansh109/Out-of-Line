@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BirdMovement : MonoBehaviour
 {
-    public float speed = 0.8f;
+    float speed = 1f;
     public float destroyMargin = 0.1f;
 
     private Camera mainCamera;
