@@ -1,16 +1,31 @@
+
 using UnityEngine;
 
 public class BirdMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float speed = 0.8f;
+    public float destroyMargin = 0.1f;
+
+    private Camera mainCamera;
+
     void Start()
     {
-        //gameObject.transform.position = new Vector3(0, 0, 0);
+        mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position += new Vector3(1, 0, 0) * Time.deltaTime;
+        // Move to the right
+        transform.position +=
+            Vector3.right * speed * Time.deltaTime;
+
+        // Check whether the bird has passed the right edge
+        Vector3 viewPosition =
+            mainCamera.WorldToViewportPoint(transform.position);
+
+        if (viewPosition.x > 1f + destroyMargin)
+        {
+            Destroy(gameObject);
+        }
     }
 }

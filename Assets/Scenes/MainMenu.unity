@@ -128,8 +128,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104951360}
+  - component: {fileID: 104951361}
   m_Layer: 0
-  m_Name: BirdSpawnPos
+  m_Name: BirdSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,6 +151,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &104951361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104951359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6731c3896af90a844bcbd3e5e8303742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BirdSpawner
+  birdPrefab: {fileID: 8936489156866009039, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
+  mainCamera: {fileID: 1419306912}
+  spawnDistance: 1
+  minSpawnTime: 1
+  maxSpawnTime: 3
+  spawnHeights:
+  - 1
+  - 2
+  - 3
+  - 4
 --- !u!1 &279691154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,23 +1328,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &1706200723 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8936489156866009039, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-  m_PrefabInstance: {fileID: 3913189631800220259}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1706200727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706200723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee996fa7645806940802be5dffc9540d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BirdMovement
 --- !u!1 &1714521484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,66 +1948,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &3913189631800220259
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.4796
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.749
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2567823258644306227, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936489156866009039, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      propertyPath: m_Name
-      value: Bird
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8936489156866009039, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1706200727}
-  m_SourcePrefab: {fileID: 100100000, guid: 8e141b9cb25ba294dbd40189e80587e8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2011,5 +1957,4 @@ SceneRoots:
   - {fileID: 497898969}
   - {fileID: 1714521487}
   - {fileID: 1855502254}
-  - {fileID: 3913189631800220259}
   - {fileID: 104951360}
