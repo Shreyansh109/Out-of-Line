@@ -81,13 +81,19 @@ public class PlayerMovement : MonoBehaviour
             audioSourceSFX.Play();
             isJumping = false;
         }
+
+        if(LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform")
+        {
+            print("moving platform");
+            transform.SetParent(collision.transform);
+        }
     }
 
-    // private void OnCollisionExit2D(Collision2D collision)
-    // {
-    //     if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" && isGrounded)
-    //     {
-    //         isJumping = true;
-    //     }
-    // }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform")
+        {
+            transform.SetParent(null);
+        }
+    }
 }
