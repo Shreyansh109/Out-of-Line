@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" && isJumping)
+        if ((LayerMask.LayerToName(collision.gameObject.layer) == "Platform") && isJumping)
         {
             print("Landed on platform");
             audioSourceSFX.clip = landSound; // Play land sound effect
@@ -82,10 +82,21 @@ public class PlayerMovement : MonoBehaviour
             isJumping = false;
         }
 
-        if(LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform")
+        if(LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform" && isJumping)
         {
             print("moving platform");
             transform.SetParent(collision.transform);
+            audioSourceSFX.clip = landSound; // Play land sound effect
+            audioSourceSFX.Play();
+            isJumping = false;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform" && isJumping == false)
+        {
+            isJumping = false;
         }
     }
 
