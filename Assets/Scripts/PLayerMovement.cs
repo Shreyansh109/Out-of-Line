@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Move();
-        isGrounded = boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform"));
+        isGrounded = boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) || boxCollider.IsTouchingLayers(LayerMask.GetMask("MovingPlatform"));
     }
 
     void OnMove(InputValue value)
@@ -74,18 +74,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((LayerMask.LayerToName(collision.gameObject.layer) == "Platform") && isJumping)
+        if ((LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform") && isJumping)
         {
             print("Landed on platform");
-            audioSourceSFX.clip = landSound; // Play land sound effect
-            audioSourceSFX.Play();
-            isJumping = false;
-        }
-
-        if(LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform" && isJumping)
-        {
-            print("moving platform");
-            transform.SetParent(collision.transform);
             audioSourceSFX.clip = landSound; // Play land sound effect
             audioSourceSFX.Play();
             isJumping = false;
