@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private AudioSource audioSource;
     bool isGrounded = false;
     bool isJumping = false;
+    float flying = 0;
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSourceSFX;
     [SerializeField] private AudioClip jumpSound;
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Move();
+        //Flying();
         isGrounded = boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) || boxCollider.IsTouchingLayers(LayerMask.GetMask("MovingPlatform"));
     }
 
@@ -59,11 +61,31 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocityX = inputVector.x * 5f; // Adjust speed as needed
     }
 
+    void OnFly(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            flying = 1f; // Adjust jump force as needed
+            isJumping = true;
+        }
+        else
+        {
+            flying = 0f; // Stop upward movement when fly button is released
+            isJumping = false;
+        }
+    }
+
+    void Flying()
+    {
+        rb.linearVelocityY = 11f*flying; // Adjust jump force as needed
+    }
+
     void OnJump(InputValue value)
     {
         if (value.isPressed && isGrounded)
         {
-            rb.linearVelocityY = 11f; // Adjust jump force as needed
+            //rb.linearVelocityY = 11f; // Adjust jump force as needed
+            rb.AddForce(new Vector2(0f, 11f), ForceMode2D.Impulse); // Apply jump force
             animator.SetTrigger("isJumping");
             audioSourceSFX.clip = jumpSound; // Play jump sound effect
             audioSourceSFX.Play();
