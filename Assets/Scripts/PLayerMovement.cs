@@ -12,7 +12,12 @@ public class PlayerMovement : MonoBehaviour
     private AudioSource audioSource;
     bool isGrounded = false;
     bool isJumping = false;
-    float flying = 0;
+    private bool isFlying = false;
+
+    [Header("Flying Settings")]
+    [SerializeField] private float flyForce = 20f;
+    [SerializeField] private float maxFlySpeed = 8f;
+
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSourceSFX;
     [SerializeField] private AudioClip jumpSound;
@@ -34,6 +39,11 @@ public class PlayerMovement : MonoBehaviour
         //Flying();
         isGrounded = boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) || boxCollider.IsTouchingLayers(LayerMask.GetMask("MovingPlatform"));
     }
+
+    // void FixedUpdate()
+    // {
+    //     Flying();
+    // }
 
     void OnMove(InputValue value)
     {
@@ -61,31 +71,29 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocityX = inputVector.x * 5f; // Adjust speed as needed
     }
 
-    void OnFly(InputValue value)
+//    void OnFly(InputValue value)
+//     {
+//         isFlying = value.isPressed;
+//     }
+    void Flying()
     {
-        if (value.isPressed)
+        if (isFlying && rb.linearVelocity.y < maxFlySpeed)
         {
-            flying = 1f; // Adjust jump force as needed
-            isJumping = true;
+            print("Flying");
+            rb.linearVelocityY = flyForce * Time.fixedDeltaTime; // Apply upward force for flying
         }
         else
         {
-            flying = 0f; // Stop upward movement when fly button is released
-            isJumping = false;
+            rb.linearVelocityY = rb.linearVelocity.y; // Maintain current vertical velocity when not flying
+            print("Not Flying");
         }
-    }
-
-    void Flying()
-    {
-        rb.linearVelocityY = 11f*flying; // Adjust jump force as needed
     }
 
     void OnJump(InputValue value)
     {
         if (value.isPressed && isGrounded)
         {
-            //rb.linearVelocityY = 11f; // Adjust jump force as needed
-            rb.AddForce(new Vector2(0f, 11f), ForceMode2D.Impulse); // Apply jump force
+            rb.AddForce(new Vector2(0f, 500f), ForceMode2D.Force); // Apply jump force
             animator.SetTrigger("isJumping");
             audioSourceSFX.clip = jumpSound; // Play jump sound effect
             audioSourceSFX.Play();
@@ -98,7 +106,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if ((LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform") && isJumping)
         {
-            print("Landed on platform");
             audioSourceSFX.clip = landSound; // Play land sound effect
             audioSourceSFX.Play();
             isJumping = false;
