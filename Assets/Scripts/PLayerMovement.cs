@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Flying Settings")]
     [SerializeField] private float flyForce = 8f;
     [SerializeField] private float maxFlySpeed = 8f;
+    [SerializeField] private ParticleSystem jetSmoke;
     InputAction jetAction;
 
     [Header("Audio Settings")]
@@ -80,8 +81,14 @@ public class PlayerMovement : MonoBehaviour
         if (jetAction.IsPressed() && rb.linearVelocity.y < maxFlySpeed)
         {
             //print("Jetpack: " + isJetActive);
+            jetSmoke.Play();
             rb.AddForce(new Vector2(0f, flyForce), ForceMode2D.Impulse); // Apply upward force for flying
         }
+        else if(!jetAction.IsPressed())
+        {
+            jetSmoke.Stop();
+        }
+
     }
 
     void OnJump(InputValue value)
