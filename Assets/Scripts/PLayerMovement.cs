@@ -60,12 +60,12 @@ public class PlayerMovement : MonoBehaviour
         if (inputVector.x > 0)
         {
             gameObject.transform.localScale = new Vector3(1, 1, 1); // Face right
-            animator.SetBool("isRunning", true);
+            animator.SetBool("isRunning", !jetAction.IsPressed());
         }
         else if (inputVector.x < 0)
         {
             gameObject.transform.localScale = new Vector3(-1, 1, 1); // Face left
-            animator.SetBool("isRunning", true);
+            animator.SetBool("isRunning", !jetAction.IsPressed());
         }
         else
         {
