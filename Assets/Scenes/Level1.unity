@@ -3114,7 +3114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4577785251747558908, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
       propertyPath: flyForce
-      value: 25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6205862914698959114, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
       propertyPath: m_LocalPosition.x

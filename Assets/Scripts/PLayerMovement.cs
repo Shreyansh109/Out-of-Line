@@ -12,11 +12,13 @@ public class PlayerMovement : MonoBehaviour
     private AudioSource audioSource;
     bool isGrounded = false;
     bool isJumping = false;
-    private bool isFlying = false;
+    private bool isJetActive = false;
+    //public InputActionReference flyAction; // Reference to the fly action
 
     [Header("Flying Settings")]
-    [SerializeField] private float flyForce = 20f;
+    [SerializeField] private float flyForce = 8f;
     [SerializeField] private float maxFlySpeed = 8f;
+    InputAction jetAction;
 
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSourceSFX;
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
+        jetAction = GetComponent<PlayerInput>().actions["Jet"];
     }
 
     // Update is called once per frame
@@ -40,10 +43,10 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) || boxCollider.IsTouchingLayers(LayerMask.GetMask("MovingPlatform"));
     }
 
-    // void FixedUpdate()
-    // {
-    //     Flying();
-    // }
+    void FixedUpdate()
+    {
+        Flying();
+    }
 
     void OnMove(InputValue value)
     {
@@ -70,22 +73,14 @@ public class PlayerMovement : MonoBehaviour
         }
         rb.linearVelocityX = inputVector.x * 5f; // Adjust speed as needed
     }
-
-//    void OnFly(InputValue value)
-//     {
-//         isFlying = value.isPressed;
-//     }
+    
     void Flying()
     {
-        if (isFlying && rb.linearVelocity.y < maxFlySpeed)
+        //isJetActive = jetAction.action.IsPressed(); // Check if the jet action is pressed
+        if (jetAction.IsPressed() && rb.linearVelocity.y < maxFlySpeed)
         {
-            print("Flying");
-            rb.linearVelocityY = flyForce * Time.fixedDeltaTime; // Apply upward force for flying
-        }
-        else
-        {
-            rb.linearVelocityY = rb.linearVelocity.y; // Maintain current vertical velocity when not flying
-            print("Not Flying");
+            //print("Jetpack: " + isJetActive);
+            rb.AddForce(new Vector2(0f, flyForce), ForceMode2D.Impulse); // Apply upward force for flying
         }
     }
 
