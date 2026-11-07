@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   flyForce: 1
   maxFlySpeed: 8
-  jetSmoke: {fileID: 0}
+  jetSmoke: {fileID: 2891759238608114002}
   audioSourceSFX: {fileID: 3953618367843314165}
   jumpSound: {fileID: 8300000, guid: 6b4318e8c46fddf44b9ea7261b120b50, type: 3}
   landSound: {fileID: 8300000, guid: 5325a422cba6d1847970f9a58eae4cb7, type: 3}
@@ -524,7 +524,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:

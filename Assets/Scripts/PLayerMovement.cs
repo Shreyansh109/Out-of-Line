@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
     
     void Flying()
     {
+        isJetActive = jetAction.IsPressed();
         //isJetActive = jetAction.action.IsPressed(); // Check if the jet action is pressed
         if (jetAction.IsPressed() && rb.linearVelocity.y < maxFlySpeed)
         {
@@ -113,6 +114,10 @@ public class PlayerMovement : MonoBehaviour
             audioSourceSFX.clip = landSound; // Play land sound effect
             audioSourceSFX.Play();
             isJumping = false;
+        }
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform")
+        {
+            transform.SetParent(collision.transform); // Set the player as a child of the moving platform
         }
     }
 

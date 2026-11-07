@@ -801,11 +801,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!198 &316868370 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2891759238608114002, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-  m_PrefabInstance: {fileID: 9170516698412964009}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +933,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.249996, y: 10.77188, z: -10}
+  m_LocalPosition: {x: 12.25, y: 11.88, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1545,7 +1540,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -11.556728, y: 3.89824}
+  m_Offset: {x: -10.365969, y: 10.717834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1555,7 +1550,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 40.39637, y: 21.07766}
+  m_Size: {x: 77.31006, y: 52.18138}
   m_EdgeRadius: 0
 --- !u!4 &772158879
 Transform:
@@ -3117,14 +3112,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2891759238608114002, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577785251747558908, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-      propertyPath: jetSmoke
-      value: 
-      objectReference: {fileID: 316868370}
     - target: {fileID: 6205862914698959114, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.25
