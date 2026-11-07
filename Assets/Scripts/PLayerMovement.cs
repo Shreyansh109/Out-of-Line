@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource audioSourceSFX;
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip landSound;
+    [SerializeField] private AudioClip jetSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -85,11 +86,22 @@ public class PlayerMovement : MonoBehaviour
             jetSmoke.Play();
             animator.SetBool("isFlying", true);
             rb.AddForce(new Vector2(0f, flyForce), ForceMode2D.Impulse); // Apply upward force for flying
+            if (!audioSourceSFX.isPlaying)
+            {
+                audioSourceSFX.clip = jetSound; // Play jet sound effect
+                audioSourceSFX.volume = 0.3f; // Set volume for jet sound effect
+                audioSourceSFX.Play();
+            }
         }
         else if(!jetAction.IsPressed())
         {
             jetSmoke.Stop();
             animator.SetBool("isFlying", false);
+            if (audioSourceSFX.clip == jetSound && audioSourceSFX.isPlaying)
+            {
+                audioSourceSFX.Stop(); // Stop jet sound effect when not flying
+                audioSourceSFX.volume = 1f; // Reset volume for other sound effects
+            }
         }
 
     }
@@ -115,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
             audioSourceSFX.Play();
             isJumping = false;
         }
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform")
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform" && isGrounded)
         {
             transform.SetParent(collision.transform); // Set the player as a child of the moving platform
         }
