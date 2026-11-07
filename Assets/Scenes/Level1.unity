@@ -3112,14 +3112,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2891759238608114002, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577785251747558908, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-      propertyPath: jetSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 1e6dba981e784eb48a422a743203ae99, type: 3}
     - target: {fileID: 6205862914698959114, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.25

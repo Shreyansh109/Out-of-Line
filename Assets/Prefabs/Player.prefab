@@ -185,6 +185,7 @@ MonoBehaviour:
   audioSourceSFX: {fileID: 3953618367843314165}
   jumpSound: {fileID: 8300000, guid: 6b4318e8c46fddf44b9ea7261b120b50, type: 3}
   landSound: {fileID: 8300000, guid: 5325a422cba6d1847970f9a58eae4cb7, type: 3}
+  jetSound: {fileID: 8300000, guid: 1e6dba981e784eb48a422a743203ae99, type: 3}
 --- !u!61 &5618139781274937731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1344,7 +1345,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.48
+      scalar: 2
       minScalar: 10
       maxCurve:
         serializedVersion: 2
