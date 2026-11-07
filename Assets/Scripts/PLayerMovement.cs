@@ -82,11 +82,13 @@ public class PlayerMovement : MonoBehaviour
         {
             //print("Jetpack: " + isJetActive);
             jetSmoke.Play();
+            animator.SetBool("isFlying", true);
             rb.AddForce(new Vector2(0f, flyForce), ForceMode2D.Impulse); // Apply upward force for flying
         }
         else if(!jetAction.IsPressed())
         {
             jetSmoke.Stop();
+            animator.SetBool("isFlying", false);
         }
 
     }
