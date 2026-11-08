@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isJetActive = false;
     //public InputActionReference flyAction; // Reference to the fly action
 
+    [Header("Attack Settings")]
+    PlayerAttack playerAttack;
+
     [Header("Flying Settings")]
     [SerializeField] private float flyForce = 8f;
     [SerializeField] private float maxFlySpeed = 8f;
@@ -35,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
         jetAction = GetComponent<PlayerInput>().actions["Jet"];
+        playerAttack = GetComponentInChildren<PlayerAttack>();
     }
 
     // Update is called once per frame
@@ -146,6 +150,14 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform")
         {
             transform.SetParent(null);
+        }
+    }
+
+    void OnAttack(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            playerAttack.Attack();
         }
     }
 }
