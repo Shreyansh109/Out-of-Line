@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 47eaa69f4c5735049bc5bad415754896
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4882672465310597423
+    second: ThrusterImg_0
+  - first:
+      213: -1422607888069069121
+    second: ThrusterImg_1
+  - first:
+      213: -1188392739059357433
+    second: ThrusterImg_2
+  - first:
+      213: 8419891071286074849
+    second: ThrusterImg_3
+  - first:
+      213: -4552915280361037799
+    second: ThrusterImg_4
+  - first:
+      213: 4389627687942230404
+    second: ThrusterImg_5
+  - first:
+      213: 196844641326872995
+    second: ThrusterImg_6
+  - first:
+      213: 3208999965416498864
+    second: ThrusterImg_7
+  - first:
+      213: 3531535220750973990
+    second: ThrusterImg_8
+  - first:
+      213: -2659999062835446234
+    second: ThrusterImg_9
+  - first:
+      213: 4696811000348878619
+    second: ThrusterImg_10
+  - first:
+      213: 7653355481670412398
+    second: ThrusterImg_11
+  - first:
+      213: -312613471742189009
+    second: ThrusterImg_12
+  - first:
+      213: -1672759014327885632
+    second: ThrusterImg_13
+  - first:
+      213: -5857437571462631415
+    second: ThrusterImg_14
+  - first:
+      213: -8534904037968194976
+    second: ThrusterImg_15
+  - first:
+      213: -591236452404367482
+    second: ThrusterImg_16
+  - first:
+      213: 5675628021335717266
+    second: ThrusterImg_17
+  - first:
+      213: 7737917724572445800
+    second: ThrusterImg_18
+  - first:
+      213: -4922772128912360864
+    second: ThrusterImg_19
+  - first:
+      213: 5673042391871575885
+    second: ThrusterImg_20
+  - first:
+      213: -3031331030313917767
+    second: ThrusterImg_21
+  - first:
+      213: 4932185335750706755
+    second: ThrusterImg_22
+  - first:
+      213: 5224058861454148675
+    second: ThrusterImg_23
+  - first:
+      213: -1918822355819559707
+    second: ThrusterImg_24
+  - first:
+      213: -3180140450954835002
+    second: ThrusterImg_25
+  - first:
+      213: 4475743734484971071
+    second: ThrusterImg_26
+  - first:
+      213: 7640993952374761004
+    second: ThrusterImg_27
+  - first:
+      213: 5246463400746028619
+    second: ThrusterImg_28
+  - first:
+      213: -4342681516267356672
+    second: ThrusterImg_29
+  - first:
+      213: 3531472507956451398
+    second: ThrusterImg_30
+  - first:
+      213: 2778208998071281626
+    second: ThrusterImg_31
+  - first:
+      213: -2186201115728522966
+    second: ThrusterImg_32
+  - first:
+      213: 2783733276652378106
+    second: ThrusterImg_33
+  - first:
+      213: 2727368528966483566
+    second: ThrusterImg_34
+  - first:
+      213: -2178628065486219483
+    second: ThrusterImg_35
+  - first:
+      213: -8153373042824734727
+    second: ThrusterImg_36
+  - first:
+      213: -8133111600956435269
+    second: ThrusterImg_37
+  - first:
+      213: 8579062477255059893
+    second: ThrusterImg_38
+  - first:
+      213: -2819300891690947191
+    second: ThrusterImg_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ThrusterImg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1245
+        height: 1236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deb49623434d3cb0800000000000000
+      internalID: -4882672465310597423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_1
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1211
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb679f0c9a1e14ce0800000000000000
+      internalID: -1422607888069069121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_2
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1235
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709a6b6a91bf18fe0800000000000000
+      internalID: -1188392739059357433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_3
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1156
+        width: 107
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed5d7f915679d470800000000000000
+      internalID: 8419891071286074849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_4
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1205
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910e1a5ccabc0d0c0800000000000000
+      internalID: -4552915280361037799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_5
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1213
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481140cff171bec30800000000000000
+      internalID: 4389627687942230404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_6
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1205
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a93a3a88255bb200800000000000000
+      internalID: 196844641326872995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_7
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1211
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b624ee6778a88c20800000000000000
+      internalID: 3208999965416498864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_8
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1189
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c74a88298820130800000000000000
+      internalID: 3531535220750973990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_9
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1197
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e32d412f8c51bd0800000000000000
+      internalID: -2659999062835446234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_10
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1187
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1721f458bc6e2140800000000000000
+      internalID: 4696811000348878619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_11
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1180
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68e0c8e24e263a60800000000000000
+      internalID: 7653355481670412398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_12
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1185
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f222ec824bf59abf0800000000000000
+      internalID: -312613471742189009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_13
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1183
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c067240a8a29c8e0800000000000000
+      internalID: -1672759014327885632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_14
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1175
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90071f2109336bea0800000000000000
+      internalID: -5857437571462631415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_15
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1191
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062dbd05ffded8980800000000000000
+      internalID: -8534904037968194976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_16
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1189
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fec2c34918bc7f0800000000000000
+      internalID: -591236452404367482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_17
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1189
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295f7f85d91e3ce40800000000000000
+      internalID: 5675628021335717266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_18
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 714
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ce65a5c2b926b60800000000000000
+      internalID: 7737917724572445800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_19
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 624
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a3cf9a4dcceabb0800000000000000
+      internalID: -4922772128912360864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_20
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 27
+        width: 114
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47dc339ff1babe40800000000000000
+      internalID: 5673042391871575885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_21
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 85
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b225851d7c8ee5d0800000000000000
+      internalID: -3031331030313917767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 57
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346cfc75e64a27440800000000000000
+      internalID: 4932185335750706755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_23
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 83
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344c4b23bd59f7840800000000000000
+      internalID: 5224058861454148675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_24
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 61
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e40c46db39fe55e0800000000000000
+      internalID: -1918822355819559707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_25
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 77
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb8cf4eb1fddd3d0800000000000000
+      internalID: -3180140450954835002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_26
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 63
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e28a786390d1e30800000000000000
+      internalID: 4475743734484971071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_27
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 53
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26a43614834a0a60800000000000000
+      internalID: 7640993952374761004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_28
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 65
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e0e808aae2fc840800000000000000
+      internalID: 5246463400746028619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 49
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00eba326b22bbb3c0800000000000000
+      internalID: -4342681516267356672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_30
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 43
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6485dc2198f420130800000000000000
+      internalID: 3531472507956451398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_31
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 91
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad725d93d5e2e8620800000000000000
+      internalID: 2778208998071281626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_32
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 33
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2150711bad09a1e0800000000000000
+      internalID: -2186201115728522966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_33
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 0
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af79c409aaec1a620800000000000000
+      internalID: 2783733276652378106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_34
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e70a41a3f89d520800000000000000
+      internalID: 2727368528966483566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_35
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 23
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5275ffa3155f3c1e0800000000000000
+      internalID: -2178628065486219483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_36
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 21
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f79f2d7a6669de80800000000000000
+      internalID: -8153373042824734727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_37
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 27
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4126a0712612f80800000000000000
+      internalID: -8133111600956435269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_38
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 31
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9aba68ed3fe0770800000000000000
+      internalID: 8579062477255059893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrusterImg_39
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 17
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98da1dbb6c4dfd8d0800000000000000
+      internalID: -2819300891690947191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ThrusterImg_0: -4882672465310597423
+      ThrusterImg_1: -1422607888069069121
+      ThrusterImg_10: 4696811000348878619
+      ThrusterImg_11: 7653355481670412398
+      ThrusterImg_12: -312613471742189009
+      ThrusterImg_13: -1672759014327885632
+      ThrusterImg_14: -5857437571462631415
+      ThrusterImg_15: -8534904037968194976
+      ThrusterImg_16: -591236452404367482
+      ThrusterImg_17: 5675628021335717266
+      ThrusterImg_18: 7737917724572445800
+      ThrusterImg_19: -4922772128912360864
+      ThrusterImg_2: -1188392739059357433
+      ThrusterImg_20: 5673042391871575885
+      ThrusterImg_21: -3031331030313917767
+      ThrusterImg_22: 4932185335750706755
+      ThrusterImg_23: 5224058861454148675
+      ThrusterImg_24: -1918822355819559707
+      ThrusterImg_25: -3180140450954835002
+      ThrusterImg_26: 4475743734484971071
+      ThrusterImg_27: 7640993952374761004
+      ThrusterImg_28: 5246463400746028619
+      ThrusterImg_29: -4342681516267356672
+      ThrusterImg_3: 8419891071286074849
+      ThrusterImg_30: 3531472507956451398
+      ThrusterImg_31: 2778208998071281626
+      ThrusterImg_32: -2186201115728522966
+      ThrusterImg_33: 2783733276652378106
+      ThrusterImg_34: 2727368528966483566
+      ThrusterImg_35: -2178628065486219483
+      ThrusterImg_36: -8153373042824734727
+      ThrusterImg_37: -8133111600956435269
+      ThrusterImg_38: 8579062477255059893
+      ThrusterImg_39: -2819300891690947191
+      ThrusterImg_4: -4552915280361037799
+      ThrusterImg_5: 4389627687942230404
+      ThrusterImg_6: 196844641326872995
+      ThrusterImg_7: 3208999965416498864
+      ThrusterImg_8: 3531535220750973990
+      ThrusterImg_9: -2659999062835446234
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
