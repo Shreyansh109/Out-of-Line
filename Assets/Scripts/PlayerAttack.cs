@@ -36,29 +36,30 @@ public class PlayerAttack : MonoBehaviour
         audioSource.Play();
     }
 
-    // void OnTriggerEnter(Collider other)
-    // {
-    //     if (other.CompareTag("Enemy"))
-    //     {
-    //         isEnemyInRange = true;
-    //         print("Enemy in range");
-    //     }
-    // }
-    // void OnTriggerStay(Collider other)
-    // {
-    //     if (other.CompareTag("Enemy"))
-    //     {
-    //         isEnemyInRange = true;
-    //         print("Enemy in range");
-    //     }
-    // }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        print("Enemy in range");
+        if (other.CompareTag("Enemy"))
+        {
+            isEnemyInRange = true;
+            
+        }
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            isEnemyInRange = true;
+            print("Enemy in range");
+        }
+    }
 
-    // void OnTriggerExit(Collider other)
-    // {
-    //     if (other.CompareTag("Enemy"))
-    //     {
-    //         isEnemyInRange = false;
-    //         print("Enemy out of range");
-    //     }
-    // }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            isEnemyInRange = false;
+            print("Enemy out of range");
+        }
+    }
 }
