@@ -19,26 +19,26 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        if (audioSource == null)
-        {
-            print("AudioSource component is missing!");
-        }
         animator.SetTrigger("Attack");
-        if (isEnemyInRange)
+        if (isEnemyInRange && audioSource.clip == null)
         {
             audioSource.clip =  swordHitSound;
+            audioSource.Play();
             
         }
         else
         {
-            audioSource.clip = swordSwingSound;
+            if(audioSource.clip == null)
+            {
+                audioSource.clip = swordSwingSound;
+                audioSource.Play();
+            }
         }
-        audioSource.Play();
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("Enemy in range");
         if (other.CompareTag("Enemy"))
         {
             isEnemyInRange = true;
@@ -50,7 +50,6 @@ public class PlayerAttack : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             isEnemyInRange = true;
-            print("Enemy in range");
         }
     }
 
@@ -59,7 +58,6 @@ public class PlayerAttack : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             isEnemyInRange = false;
-            print("Enemy out of range");
         }
     }
 }
