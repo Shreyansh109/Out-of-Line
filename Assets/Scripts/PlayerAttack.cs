@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
     public void Attack()
     {
         animator.SetTrigger("Attack");
-        if (isEnemyInRange && audioSource.clip == null)
+        if (isEnemyInRange && !animator.GetCurrentAnimatorStateInfo(0).IsName("Flying"))
         {
             audioSource.clip =  swordHitSound;
             audioSource.Play();
@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else
         {
-            if(audioSource.clip == null)
+            if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Flying"))
             {
                 audioSource.clip = swordSwingSound;
                 audioSource.Play();
