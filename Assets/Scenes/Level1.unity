@@ -3623,6 +3623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4577785251747558908, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
+      propertyPath: thrustFuel
+      value: 
+      objectReference: {fileID: 11400000, guid: a490f7c03122aa44eafbf92e906a105e, type: 2}
     - target: {fileID: 4831692421010448007, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
       propertyPath: animator
       value: 

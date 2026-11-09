@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float flyForce = 8f;
     [SerializeField] private float maxFlySpeed = 8f;
     [SerializeField] private ParticleSystem jetSmoke;
+    [SerializeField] private ThrustFuel thrustFuel; // Reference to the ThrustFuel ScriptableObject
     InputAction jetAction;
 
     [Header("Audio Settings")]
@@ -84,12 +85,13 @@ public class PlayerMovement : MonoBehaviour
     {
         isJetActive = jetAction.IsPressed();
         //isJetActive = jetAction.action.IsPressed(); // Check if the jet action is pressed
-        if (jetAction.IsPressed() && rb.linearVelocity.y < maxFlySpeed)
+        if (jetAction.IsPressed() && rb.linearVelocity.y < maxFlySpeed && thrustFuel.FuelAmount > 0f)
         {
             //print("Jetpack: " + isJetActive);
             jetSmoke.Play();
             animator.SetBool("isFlying", true);
             rb.AddForce(new Vector2(0f, flyForce), ForceMode2D.Impulse); // Apply upward force for flying
+            thrustFuel.UseFuel(); // Decrease fuel level when flying
             if (!audioSourceSFX.isPlaying)
             {
                 audioSourceSFX.clip = jetSound; // Play jet sound effect
@@ -97,9 +99,10 @@ public class PlayerMovement : MonoBehaviour
                 audioSourceSFX.Play();
             }
         }
-        else if(!jetAction.IsPressed())
+        else if(!jetAction.IsPressed() || thrustFuel.FuelAmount <= 0f)
         {
             jetSmoke.Stop();
+            thrustFuel.RefillFuel(); // Refill fuel when not flying
             animator.SetBool("isFlying", false);
             if (audioSourceSFX.clip == jetSound && audioSourceSFX.isPlaying)
             {
