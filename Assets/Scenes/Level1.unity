@@ -1860,6 +1860,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &845931448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 895707048099430593, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
+  m_PrefabInstance: {fileID: 9170516698412964009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &923457054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,7 +2442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996f130f7bf17a4a9ca3b67043962f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThrustProgressBar
-  thrustFuel: {fileID: 11400000, guid: a490f7c03122aa44eafbf92e906a105e, type: 2}
+  Player: {fileID: 845931448}
 --- !u!1 &1152630240
 GameObject:
   m_ObjectHideFlags: 0

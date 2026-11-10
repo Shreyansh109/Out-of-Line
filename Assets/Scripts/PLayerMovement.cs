@@ -170,7 +170,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (currentJetFuel > 0)
         {
-            currentJetFuel -= Time.deltaTime*3; // Decrease fuel amount over time
+            print("Use Fuel: " + currentJetFuel);
+            currentJetFuel -= Time.deltaTime*30; // Decrease fuel amount over time
             if (currentJetFuel < 0)
             {
                 currentJetFuel = 0; // Ensure fuel amount doesn't go below zero
@@ -181,6 +182,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (currentJetFuel < 100f)
         {
+            print("Refilling Fuel" + currentJetFuel);
             currentJetFuel += Time.deltaTime*3; // Increase fuel amount by the specified amount
         }
     }
