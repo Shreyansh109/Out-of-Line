@@ -3202,11 +3202,6 @@ Transform:
   - {fileID: 519939873}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1759825716 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7646310890610519828, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-  m_PrefabInstance: {fileID: 9170516698412964009}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1779885084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,14 +3637,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4577785251747558908, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-      propertyPath: thrustFuel
-      value: 
-      objectReference: {fileID: 11400000, guid: a490f7c03122aa44eafbf92e906a105e, type: 2}
-    - target: {fileID: 4831692421010448007, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1759825716}
     - target: {fileID: 6205862914698959114, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.25
@@ -3689,10 +3676,6 @@ PrefabInstance:
     - target: {fileID: 6205862914698959114, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6285064254632742806, guid: f28ebc4afa0e1a040aadbf8e29ba1777, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

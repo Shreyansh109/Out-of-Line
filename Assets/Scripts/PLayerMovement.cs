@@ -130,6 +130,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        isGrounded = boxCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) || boxCollider.IsTouchingLayers(LayerMask.GetMask("MovingPlatform"));
+        if(isGrounded)
+        {
+            print("Collided with Ground");
+        }
         if ((LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform") && isJumping)
         {
             audioSourceSFX.clip = landSound; // Play land sound effect
@@ -138,6 +143,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (LayerMask.LayerToName(collision.gameObject.layer) == "MovingPlatform" && isGrounded)
         {
+            print("Collided with Moving Platform");
             transform.SetParent(collision.transform); // Set the player as a child of the moving platform
         }
     }
@@ -170,7 +176,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (currentJetFuel > 0)
         {
-            print("Use Fuel: " + currentJetFuel);
             currentJetFuel -= Time.deltaTime*30; // Decrease fuel amount over time
             if (currentJetFuel < 0)
             {
@@ -182,7 +187,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (currentJetFuel < 100f)
         {
-            print("Refilling Fuel" + currentJetFuel);
             currentJetFuel += Time.deltaTime*3; // Increase fuel amount by the specified amount
         }
     }
