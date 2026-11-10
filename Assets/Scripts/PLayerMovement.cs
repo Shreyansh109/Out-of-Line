@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded = false;
     bool isJumping = false;
     private bool isJetActive = false;
+    private float currentJetFuel;
     //public InputActionReference flyAction; // Reference to the fly action
 
     [Header("Attack Settings")]
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         jetAction = GetComponent<PlayerInput>().actions["Jet"];
         playerAttack = GetComponentInChildren<PlayerAttack>();
+        currentJetFuel = thrustFuel.FuelAmount;
     }
 
     // Update is called once per frame
@@ -85,13 +87,13 @@ public class PlayerMovement : MonoBehaviour
     {
         isJetActive = jetAction.IsPressed();
         //isJetActive = jetAction.action.IsPressed(); // Check if the jet action is pressed
-        if (jetAction.IsPressed() && rb.linearVelocity.y < maxFlySpeed && thrustFuel.FuelAmount > 0f)
+        if (jetAction.IsPressed() && rb.linearVelocity.y < maxFlySpeed && currentJetFuel > 0f)
         {
             //print("Jetpack: " + isJetActive);
             jetSmoke.Play();
             animator.SetBool("isFlying", true);
             rb.AddForce(new Vector2(0f, flyForce), ForceMode2D.Impulse); // Apply upward force for flying
-            thrustFuel.UseFuel(); // Decrease fuel level when flying
+            UseFuel(); // Decrease fuel level when flying
             if (!audioSourceSFX.isPlaying)
             {
                 audioSourceSFX.clip = jetSound; // Play jet sound effect
@@ -99,10 +101,10 @@ public class PlayerMovement : MonoBehaviour
                 audioSourceSFX.Play();
             }
         }
-        else if(!jetAction.IsPressed() || thrustFuel.FuelAmount <= 0f)
+        else if(!jetAction.IsPressed() || currentJetFuel <= 0f)
         {
             jetSmoke.Stop();
-            thrustFuel.RefillFuel(); // Refill fuel when not flying
+            RefillFuel(); // Refill fuel when not flying
             animator.SetBool("isFlying", false);
             if (audioSourceSFX.clip == jetSound && audioSourceSFX.isPlaying)
             {
@@ -162,5 +164,29 @@ public class PlayerMovement : MonoBehaviour
         {
             playerAttack.Attack();
         }
+    }
+
+    public void UseFuel()
+    {
+        if (currentJetFuel > 0)
+        {
+            currentJetFuel -= Time.deltaTime*3; // Decrease fuel amount over time
+            if (currentJetFuel < 0)
+            {
+                currentJetFuel = 0; // Ensure fuel amount doesn't go below zero
+            }
+        }
+    }
+    public void RefillFuel()
+    {
+        if (currentJetFuel < 100f)
+        {
+            currentJetFuel += Time.deltaTime*3; // Increase fuel amount by the specified amount
+        }
+    }
+
+    public float GetCurrentFuel()
+    {
+        return currentJetFuel; // Return the current fuel amount
     }
 }

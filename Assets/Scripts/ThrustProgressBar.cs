@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ThrustProgressBar : MonoBehaviour
 {
     private Image progressBarImage;
-    [SerializeField] private ThrustFuel thrustFuel; // Reference to the ThrustFuel ScriptableObject
+    [SerializeField] private GameObject Player; // Reference to the Player object
     void Start()
     {
         progressBarImage = GetComponent<Image>();
@@ -13,6 +13,6 @@ public class ThrustProgressBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        progressBarImage.fillAmount = thrustFuel.FuelAmount / 100;
+        progressBarImage.fillAmount = Player.GetComponent<PlayerMovement>().GetCurrentFuel() / 100;
     }
 }
