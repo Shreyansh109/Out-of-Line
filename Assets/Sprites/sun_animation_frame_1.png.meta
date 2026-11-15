@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 24a6ca5dfc939d8469e99e5c29b6c8a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8221083279658432666
+    second: sun_animation_frame_1_0
+  - first:
+      213: 1196263965328367088
+    second: sun_animation_frame_1_1
+  - first:
+      213: -5627198199990108238
+    second: sun_animation_frame_1_2
+  - first:
+      213: 3542895039891013009
+    second: sun_animation_frame_1_3
+  - first:
+      213: 416111388302190045
+    second: sun_animation_frame_1_4
+  - first:
+      213: -5490166120569545723
+    second: sun_animation_frame_1_5
+  - first:
+      213: -4438882660773059355
+    second: sun_animation_frame_1_6
+  - first:
+      213: 5808806845579723097
+    second: sun_animation_frame_1_7
+  - first:
+      213: -1189012586197145775
+    second: sun_animation_frame_1_8
+  - first:
+      213: -4531646158337707604
+    second: sun_animation_frame_1_9
+  - first:
+      213: -3963683476581784167
+    second: sun_animation_frame_1_10
+  - first:
+      213: -2979878636062513721
+    second: sun_animation_frame_1_11
+  - first:
+      213: 8206317169570236289
+    second: sun_animation_frame_1_12
+  - first:
+      213: 2693223735204683648
+    second: sun_animation_frame_1_13
+  - first:
+      213: 180349236991824547
+    second: sun_animation_frame_1_14
+  - first:
+      213: -85601463886710536
+    second: sun_animation_frame_1_15
+  - first:
+      213: 6858101537498000370
+    second: sun_animation_frame_1_16
+  - first:
+      213: 4707242744186208125
+    second: sun_animation_frame_1_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sun_animation_frame_1_0
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 796
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98b1f88fa7271270800000000000000
+      internalID: 8221083279658432666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_1
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 829
+        width: 29
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd5ff60dbbf99010800000000000000
+      internalID: 1196263965328367088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_2
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 812
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf3fd02d0d28e1b0800000000000000
+      internalID: -5627198199990108238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 758
+        width: 72
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d72398444ea2130800000000000000
+      internalID: 3542895039891013009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_4
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 252
+        width: 549
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd52fbe5a1356c500800000000000000
+      internalID: 416111388302190045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_5
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 785
+        width: 91
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c519160030fc3b0800000000000000
+      internalID: -5490166120569545723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 709
+        width: 64
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e42bfcfcbbe562c0800000000000000
+      internalID: -4438882660773059355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_7
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 671
+        width: 87
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95103a7bc070d9050800000000000000
+      internalID: 5808806845579723097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 605
+        width: 91
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157204e3a57cf7fe0800000000000000
+      internalID: -1189012586197145775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 500
+        width: 94
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1748424db5c11c0800000000000000
+      internalID: -4531646158337707604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_10
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 521
+        width: 111
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995e148e0ea2ef8c0800000000000000
+      internalID: -3963683476581784167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 348
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5e7b72b2855a6d0800000000000000
+      internalID: -2979878636062513721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_12
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 396
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1874c6e9cf1b2e170800000000000000
+      internalID: 8206317169570236289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_13
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 216
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f9685c7b0406520800000000000000
+      internalID: 2693223735204683648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_14
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 270
+        width: 99
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2196eecaab08200800000000000000
+      internalID: 180349236991824547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_15
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 140
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f877c01ce1efcef0800000000000000
+      internalID: -85601463886710536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_16
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 113
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbe028330fdc2f50800000000000000
+      internalID: 6858101537498000370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sun_animation_frame_1_17
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 140
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ff0c6f55c735140800000000000000
+      internalID: 4707242744186208125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sun_animation_frame_1_0: 8221083279658432666
+      sun_animation_frame_1_1: 1196263965328367088
+      sun_animation_frame_1_10: -3963683476581784167
+      sun_animation_frame_1_11: -2979878636062513721
+      sun_animation_frame_1_12: 8206317169570236289
+      sun_animation_frame_1_13: 2693223735204683648
+      sun_animation_frame_1_14: 180349236991824547
+      sun_animation_frame_1_15: -85601463886710536
+      sun_animation_frame_1_16: 6858101537498000370
+      sun_animation_frame_1_17: 4707242744186208125
+      sun_animation_frame_1_2: -5627198199990108238
+      sun_animation_frame_1_3: 3542895039891013009
+      sun_animation_frame_1_4: 416111388302190045
+      sun_animation_frame_1_5: -5490166120569545723
+      sun_animation_frame_1_6: -4438882660773059355
+      sun_animation_frame_1_7: 5808806845579723097
+      sun_animation_frame_1_8: -1189012586197145775
+      sun_animation_frame_1_9: -4531646158337707604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
