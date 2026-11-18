@@ -19,4 +19,10 @@ public class MainMenuScript : MonoBehaviour
         // Load the game scene
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
+
+    public void ExitGame()
+    {
+        // Exit the application
+        Application.Quit();
+    }
 }
