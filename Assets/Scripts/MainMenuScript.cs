@@ -22,7 +22,10 @@ public class MainMenuScript : MonoBehaviour
 
     public void ExitGame()
     {
-        // Exit the application
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
         Application.Quit();
+        #endif
     }
 }
