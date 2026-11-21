@@ -3757,6 +3757,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameMenuBGImg-Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 9037201330750363452, guid: 046975f1236fae14aa549400c8eeaf94, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037201330750363452, guid: 046975f1236fae14aa549400c8eeaf94, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037201330750363452, guid: 046975f1236fae14aa549400c8eeaf94, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 845931449}
+    - target: {fileID: 9037201330750363452, guid: 046975f1236fae14aa549400c8eeaf94, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037201330750363452, guid: 046975f1236fae14aa549400c8eeaf94, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037201330750363452, guid: 046975f1236fae14aa549400c8eeaf94, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenuScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037201330750363452, guid: 046975f1236fae14aa549400c8eeaf94, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
