@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 5597958549427316643}
   - component: {fileID: 3953618367843314165}
   - component: {fileID: 7697304428837889950}
+  - component: {fileID: 5184159085968926613}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -460,7 +461,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 35.867188
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -557,7 +558,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 36.75464
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -659,6 +660,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &5184159085968926613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895707048099430593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef502cfe6987bd64cbe59307a05543e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenuScript
+  pauseMenuUI: {fileID: 0}
 --- !u!1 &6811889963961349081
 GameObject:
   m_ObjectHideFlags: 0
