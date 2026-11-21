@@ -10,4 +10,14 @@ public class PauseMenuScript : MonoBehaviour
     {
         pauseMenuUI.SetActive(!pauseMenuUI.activeSelf);
     }
+
+    public void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
