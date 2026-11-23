@@ -16,6 +16,11 @@ public class PauseMenuScript : MonoBehaviour
         pauseMenuUI.SetActive(false);
     }
 
+    public void Restart()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    }
+
     public void MainMenu()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
